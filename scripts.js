@@ -33,7 +33,9 @@ for (let i = 0; i < imagenes.length; i++) { // aquí recorro todas las imagenes
 
 const infocards = document.querySelectorAll(".infocard-lg-data.text-muted"); // Aquí selecciono todos los elementos con la clase 'infocard-lg-data text-muted' importante el punto porque es una clase
 
-infocards.forEach(card => { // Esto me va a permitir verificar si el enlace dentro de este contenedor tiene la clase 'itype flying'
+/* forEach es un método que se aplica directamente a los arrays. Recibe una función callback como argumento, que se ejecuta una vez por cada elemento del array. 
+En este caso, la función callback recibe un argumento card, que representa cada uno de los elementos seleccionados por querySelectorAll.*/
+infocards.forEach(card => { //Esto me va a permitir verificar si el enlace dentro de este contenedor tiene la clase 'itype flying'
   const flyingLink = card.querySelector(".itype.flying"); // Aquí selecciono el enlace dentro del contenedor que tiene la clase 'itype flying'
   
   if (flyingLink) { // Si el enlace existe, significa que el Pokémon tiene la clase 'flying'
